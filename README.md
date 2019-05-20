@@ -27,53 +27,53 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Build the following methods on the `Startup` class
 
-- `Startup#name`
+X `Startup#name`
   - returns a **string** that is the startup's name
-- `Startup#founder`
+X `Startup#founder`
   - returns a **string** that is the founder's name
   - Once a startup is created, the founder cannot be changed.
-- `Startup#domain`
+X `Startup#domain`
   - returns a **string** that is the startup's domain
   - Once a startup is created, the domain cannot be changed.
-- `Startup#pivot`
+X `Startup#pivot`
   - given a string of a **domain** and a string of a **name**, change the domain and name of the startup
-- `Startup.all`
+X `Startup.all`
   - should return **all** of the startup instances
-- `Startup.find_by_founder`
+X `Startup.find_by_founder`
   - given a string of a **founder's name**, returns the **first startup** whose founder's name matches
-- `Startup.domains`
+X `Startup.domains`
   - should return an **array** of all of the different startup domains
 
 ---
 
 #### Build out the following methods on the `VentureCapitalist` class
 
-- `VentureCapitalist#name`
+X `VentureCapitalist#name`
   - returns a **string** that is the venture capitalist's name
-- `VentureCapitalist#total_worth`
+X `VentureCapitalist#total_worth`
   - returns a **number** that is the total worth of this investor (e.g., think of it as how much money they have)
-- `VentureCapitalist.all`
+X `VentureCapitalist.all`
   - returns an array of all venture capitalists
-- `VentureCapitalist.tres_commas_club`
+X `VentureCapitalist.tres_commas_club`
   - returns an array of all venture capitalists in the Trés Commas club (they have more then 1,000,000,000 `total_worth`)
 
 ---
 
 #### Build out the following methods on the `FundingRound` class
 
-- `FundingRound#startup`
+X `FundingRound#startup`
   - returns the startup object for that given funding round
   - Once a funding round is created, I should not be able to change the startup
-- `FundingRound#venture_capitalist`
+X `FundingRound#venture_capitalist`
   - returns the venture capitalist object for that given funding round
   - Once a funding round is created, I should not be able to change the venture capitalist
-- `FundingRound#type`
+X `FundingRound#type`
   - returns a **string** that is the type of funding round
   - Examples include: Angel, Pre-Seed, Seed, Series A, Series B, Series C, etc.
-- `FundingRound#investment`
+X `FundingRound#investment`
   - returns a **number** that is the amount invested during this funding round
   - This should be a float that is not a negative number.
-- `FundingRound.all`
+X `FundingRound.all`
   - returns all of the funding rounds
 
 ---
@@ -82,15 +82,15 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Startup
 
-- `Startup#sign_contract`
+X `Startup#sign_contract`
   - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
-- `Startup#num_funding_rounds`
+X `Startup#num_funding_rounds`
   - Returns the total number of funding rounds that the startup has gotten
-- `Startup#total_funds`
+X `Startup#total_funds`
   - Returns the total sum of investments that the startup has gotten
 - `Startup#investors`
   - Returns a **unique** array of all the venture capitalists that have invested in this company
-- `Startup#big_investors`
+X `Startup#big_investors`
   - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club
 
 #### VentureCapitalist
